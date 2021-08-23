@@ -16,5 +16,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - uses: ./
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+        target: cakely
+        repositories: target
+        permissions: contents:write
     - run:
         echo "✅"

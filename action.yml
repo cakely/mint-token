@@ -14,7 +14,7 @@ inputs:
     description: The repositories (as a comma-separated list) the generated output token will have access to
     required: true
   permissions:
-    description: The permissions (as a comma-separated list) the generated output token will be granted
+    description: The permissions (as a comma-separated list of colon-separated key-value pairs, e.g. 'issues:write,contents:read') the generated output token will be granted
     required: true
 outputs:
   access-token:
