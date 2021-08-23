@@ -3313,7 +3313,7 @@ const config = __nccwpck_require__(532);
 (async () => {
   core.info(`Revoking ${ process.env.GH_TOKEN }`);
 
-  const response = await github.post(`/applications/${ config.OAuthClientID }/token`, {
+  const response = await github.delete(`/applications/${ config.OAuthClientID }/token`, {
     access_token: process.env.GH_TOKEN
   });
 

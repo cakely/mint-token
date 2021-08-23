@@ -8,7 +8,7 @@ const config = require('./config');
 (async () => {
   core.info(`Revoking ${ process.env.GH_TOKEN }`);
 
-  const response = await github.post(`/applications/${ config.OAuthClientID }/token`, {
+  const response = await github.delete(`/applications/${ config.OAuthClientID }/token`, {
     access_token: process.env.GH_TOKEN
   });
 
