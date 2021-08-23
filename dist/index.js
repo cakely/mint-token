@@ -3186,7 +3186,7 @@ module.exports = JSON.parse('{"_from":"axios","_id":"axios@0.21.1","_inBundle":f
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"mint-token","version":"0.0.1","description":"","main":"index.js","scripts":{"test":"echo \\"Error: no test specified\\" && exit 1","build":"ncc build index.js -o dist && ncc build cleanup.js -o dist/cleanup"},"repository":{"type":"git","url":"git+https://github.com/cakely/mint-use-destroy.git"},"keywords":[],"author":"Steve Winton <stevewinton@gmail.com> (https://github.com/swinton)","license":"ISC","bugs":{"url":"https://github.com/cakely/mint-use-destroy/issues"},"homepage":"https://github.com/cakely/mint-use-destroy#readme","devDependencies":{"@octokit/rest":"^18.9.1","@vercel/ncc":"^0.29.2"},"dependencies":{"@actions/core":"^1.5.0","@actions/github":"^5.0.0","axios":"^0.21.1"}}');
+module.exports = JSON.parse('{"name":"mint-token","version":"0.0.1","description":"","main":"index.js","scripts":{"test":"echo \\"Error: no test specified\\" && exit 1","build":"ncc build index.js -o dist && ncc build cleanup.js -o dist/cleanup"},"repository":{"type":"git","url":"git+https://github.com/cakely/mint-use-destroy.git"},"keywords":[],"author":"Steve Winton <stevewinton@gmail.com> (https://github.com/swinton)","license":"ISC","bugs":{"url":"https://github.com/cakely/mint-use-destroy/issues"},"homepage":"https://github.com/cakely/mint-use-destroy#readme","devDependencies":{"@vercel/ncc":"^0.29.2"},"dependencies":{"@actions/core":"^1.5.0","axios":"^0.21.1"}}');
 
 /***/ }),
 

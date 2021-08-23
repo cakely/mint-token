@@ -7,4 +7,12 @@ const config = require('./config');
 
 (async () => {
   core.info(`Revoking ${ process.env.GH_TOKEN }`);
+
+  const response = await github.post(`/applications/${ config.OAuthClientID }/token`, {
+    access_token: process.env.GH_TOKEN
+  });
+
+  if (response.status !== 204) {
+    core.setFailed(`Failed: ${ JSON.stringify(response.data) }`);
+  }
 })();
