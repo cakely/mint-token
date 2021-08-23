@@ -1,1 +1,1 @@
-# mint-use-destroy
+# `mint-token`
