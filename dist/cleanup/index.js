@@ -3313,12 +3313,15 @@ const config = __nccwpck_require__(532);
 (async () => {
   core.info(`Revoking ${ process.env.GH_TOKEN }`);
 
-  const response = await github.delete(`/applications/${ config.OAuthClientID }/token`, {
-    access_token: process.env.GH_TOKEN
-  });
-
-  if (response.status !== 204) {
-    core.setFailed(`Failed: ${ JSON.stringify(response.data) }`);
+  try {
+    const response = await github.delete(`/applications/${ config.OAuthClientID }/token`, {
+      access_token: process.env.GH_TOKEN
+    });
+    if (response.status !== 204) {
+      core.setFailed(`Failed: ${ JSON.stringify(response.data) }`);
+    }
+  } catch(e) {
+    core.setFailed(e);
   }
 })();
 
