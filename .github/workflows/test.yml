@@ -22,4 +22,4 @@ jobs:
         repositories: target
         permissions: contents:write
     - run:
-        echo "✅"
+        gh api repos/cakely/target
