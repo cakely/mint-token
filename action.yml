@@ -1,0 +1,26 @@
+name: Mint token
+description: Mint a short-lived, repo-scoped, fine-grained access token
+inputs:
+  token:
+    description: Input token used to generate output token
+    required: true
+  target:
+    description: The target (user or organization) the generated output token will be scoped to
+    required: true
+  repositories:
+    description: The repositories (as a comma-separated list) the generated output token will have access to
+    required: true
+  permissions:
+    description: The permissions (as a comma-separated list) the generated output token will be granted
+    required: true
+outputs:
+  access-token:
+    description: The token generated from the inputs
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+  post: 'dist/cleanup.js'
+branding:
+  icon: git-commit
+  color: purple
+
