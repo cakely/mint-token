@@ -1,5 +1,8 @@
 name: Mint token
 description: Mint a short-lived, repo-scoped, fine-grained access token
+branding:
+  icon: git-commit
+  color: purple
 inputs:
   token:
     description: Input token used to generate output token
@@ -19,8 +22,4 @@ outputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
-  post: 'dist/cleanup.js'
-branding:
-  icon: git-commit
-  color: purple
-
+  post: 'dist/cleanup/index.js'
