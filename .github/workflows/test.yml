@@ -23,3 +23,6 @@ jobs:
         permissions: contents:write
     - run:
         gh api repos/cakely/target
+    - run:
+        gh api repos/cakely/source
+      continue-on-error: true
