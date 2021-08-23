@@ -16,3 +16,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - uses: ./
+    - run:
+        echo "✅"
